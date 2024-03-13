@@ -15,4 +15,12 @@ https://images-api.nasa.gov/
 
 https://github.com/nasa/apod-api
 
+## Task List
+
+Karen - Pseudocode JS
+
+Wayne - Pseudocode HTML
+
+Netra - Pseudocode CSS
+
 
