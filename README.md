@@ -23,4 +23,19 @@ Wayne - Pseudocode HTML
 
 Netra - Pseudocode CSS
 
+## Branches
+
+Wayne's branch is git checkout wayne
+
+Karen's branch is git checkout karen
+
+Netra's branch is git checkout netra
+
+Ant/Andre's branch is git checkout ant
+
+### Reminder
+
+To go back to the main branch it's git checkout main
+please checkout to your branches to avoid messing up the main branch
+
 
