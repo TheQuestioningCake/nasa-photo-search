@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project-1</title>
+    <title>Search Website</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./assets/style.css">
+   
 </head>
-<body>
-    <!-- 
-        start off with divs then add the proper tags later
-        create a img tag for the Astrology Photo Of The Day aka aPOD for id reasons
-        create search bar
-        create buttons for to submit search
-        create a previous search drop down menu
-        give each necessary tag a proper class and id for the CSS and JS
-        current possible ids are "searchBar", "submitButton", "aPOD"
-     -->
+
+<body style="background-color: #9fb3f1;">
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Title -->
+        <h1 class="text-3xl font-bold mb-4">Nasa Photo Search</h1>
+
+        <div class="flex items-center mb-4">
+            <div class="mr-4">
+                <img src="./assets/images/photoOfTheDaySample.jpg" alt="Example Picture" class="h-[40vh] w-auto"id="nasaImg">
+                <div class="text-center"> 
+                    <h3 class="text-xl font-semibold">(Project Title Here)</h3>
+                </div>
+            </div>
+        </div>
 
 
+        <!-- Search form -->
+        <form action="#" method="GET" class="mb-4">
+            <div class="flex">
+                <input type="text" name="search" placeholder="Search..." class="flex-grow px-4 py-2 rounded-l-lg border border-gray-300 focus:outline-none focus:ring focus:border-blue-300">
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-r-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Search</button>
+            </div>
+        </form>
+
+        <!-- Button for previous searches -->
+        <button class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 focus:outline-none focus:bg-gray-600">Show Previous Searches</button>
+    </div>
+        <!--Custom JavaScript Link -->
     <script src="./assets/script.js"></script>
 </body>
+
 </html>

@@ -23,6 +23,8 @@ Wayne - Pseudocode HTML
 
 Netra - Pseudocode CSS
 
+Andre - Code the HTML/CSS(use tailwind)
+
 ## Branches
 
 Wayne's branch is git checkout wayne

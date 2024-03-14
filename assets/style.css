@@ -1,0 +1,16 @@
+/* Add your custom styles here */
+body, html {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#nasaImg{
+    width: 100%;
+}
