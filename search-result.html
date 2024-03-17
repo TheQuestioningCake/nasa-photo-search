@@ -39,7 +39,8 @@
                     </form> -->
 
                     <!-- have to fix the search bar if using this code snippet -->
-                    <div class="relative flex">
+                    <!-- commented out for now testing new search bar -->
+                    <!-- <div class="relative flex">
                         <input type="search"
                             class="relative m-0 -me-0.5 block flex-auto rounded-s border border-solid border-neutral-200 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill dark:focus:border-primary"
                             placeholder="Search" aria-label="Search" id="exampleFormControlInput3"
@@ -49,14 +50,41 @@
                             data-twe-ripple-init data-twe-ripple-color="white" type="button" id="button-addon3">
                             Search
                         </button>
+                    </div> -->
+                    <!--
+  Heads up! 👋
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+                    <!-- possible new search bar -->
+                    <div class="relative">
+                        <label for="Search" class="sr-only"> Search </label>
+
+                        <input type="text" id="Search" placeholder="Search for..."
+                            class="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm" />
+
+                        <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
+                            <button type="button" class="text-gray-600 hover:text-gray-700">
+                                <span class="sr-only">Search</span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                </svg>
+                            </button>
+                        </span>
                     </div>
 
+                    <!-- Previous search button -->
                     <a href="#"
                         class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
                         Previous Searches
                     </a>
+                </div>
 
-               </div> 
+                <!-- placeholders for the pictures can copy more and possibly add a scroll function -->
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
                     <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                         href="#">
