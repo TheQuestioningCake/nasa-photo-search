@@ -14,3 +14,9 @@ body, html {
     height: 3rem;
     margin-top: 2rem;
 }
+
+#nasaImg {
+    height: 200px;
+    width: 400px;
+    align-items: center;
+}
