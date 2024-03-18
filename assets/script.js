@@ -27,3 +27,11 @@ async function fetchPhotoOfTheDayAndDisplay() {
 }
 // Call the function to fetch the photo of the day and display it
 fetchPhotoOfTheDayAndDisplay();
+// Get the button element
+var homePageSearchBtn = document.getElementById('searchButton');
+    
+// Add event listener to the button
+homePageSearchBtn.addEventListener("click", function() {
+    // Load another HTML file
+    window.location.href = "search-result.html";
+});
