@@ -20,7 +20,7 @@ fetch(searchApiUrl)
   })
   .then(data => {
     // Extract the images from the response
-    const images = data.collection.items.slice(0, 6); // Fetch only the first 6 images
+    const images = data.collection.items.slice(0, 9); // Fetch only the first 6 images
     console.log(data)
     // Assuming 'images' is an array of image objects obtained from the API
     images.forEach((image, index) => {
