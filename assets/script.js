@@ -35,7 +35,3 @@ homePageSearchBtn.addEventListener("click", function() {
     // Load another HTML file
     window.location.href = "search-result.html";
 });
-
-
-
-
