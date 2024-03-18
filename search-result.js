@@ -28,7 +28,7 @@ fetch(searchApiUrl)
     const imageUrl = image.links[0].href;
 
     // Target each <img> tag within the <a> tags using its index
-    const imgElement = document.querySelectorAll('.grid a img')[index];
+    const imgElement = document.querySelectorAll('.grid div img')[index];
     
     // Set the 'src' attribute of the <img> element
     imgElement.src = imageUrl;
