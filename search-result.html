@@ -35,10 +35,14 @@
                     </div>
 
                     <!-- Previous search button -->
-                    <a href="#"
-                        class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
-                        Previous Searches
-                    </a>
+                    <button class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400" id="openModal">Click to view Previous Search</button>
+                    <div id="modal" class="fixed hidden inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center">
+                        <div class="bg-white p-6 rounded">
+                            <h2 class="text-lg font-bold mb-4">Previous Search</h2>
+                            <p></p>
+                            <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="closeModal">Close</button>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -47,7 +51,7 @@
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 ">
                     <div class="block rounded-xl" href="#">
                         <span class="inline-block p-3">
-                            <img class="imgContainer" src="" alt="">
+                            <img src="" alt="">
 
                         </span>
                     </div>
