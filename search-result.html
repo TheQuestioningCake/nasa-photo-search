@@ -9,38 +9,44 @@
     <title>Results</title>
 </head>
 
-<body class="flex justify-center items-center h-screen" style="background-color: black;">
+<body class="flex justify-center items-center h-screen bg-slate-900">
     <section>
         <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
             <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
                 <div class="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-                    <h2 class="text-3xl mb-6 font-bold sm:text-4xl text-white">Nasa Photo Search</h2>
+                    <h2 class="text-3xl mt-2 mb-6 font-bold sm:text-4xl text-white">Nasa Photo Search</h2>
                     <!-- possible new search bar -->
-                    <div class="relative">
-
-                        <label for="Search" class="sr-only">Search</label>
-                        <input type="text" id="Search" placeholder="Search for..."
-                            class="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm" />
-                        <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
-                            <button type="button" class="text-gray-600 hover:text-gray-700" id="searchBtn">
-                                <span class="sr-only">Search</span>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    <form class="max-w-md mx-auto">
+                        <label for="Search"
+                            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                                 </svg>
-                            </button>
-                        </span>
-                    </div>
+                            </div>
+                            <input type="text" id="Search"
+                                class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Search for..." required />
+                            <button id="searchBtn" type="button"
+                                class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                        </div>
+                    </form>
+
 
                     <!-- Previous search button -->
-                    <button class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400" id="openModal">Click to view Previous Search</button>
-                    <div id="modal" class="fixed hidden inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center">
+                    <button
+                        class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+                        id="openModal">Click to view Previous Search</button>
+                    <div id="modal"
+                        class="fixed hidden inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center">
                         <div class="bg-white p-6 rounded">
                             <h2 class="text-lg font-bold mb-4">Previous Search</h2>
                             <p></p>
-                            <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="closeModal">Close</button>
+                            <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                                id="closeModal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -52,39 +58,7 @@
                     <div class="block rounded-xl" href="#">
                         <span class="inline-block p-3">
                             <a href="">
-                            <img src="" alt="">
-                        </a>   
-                        </span>
-                    </div>
-
-                    <div class="block rounded-xl" href="#">
-                        <span class="inline-block p-3">
-                            <a href="">
-                            <img src="" alt="">
-                        </a>
-                        </span>
-                    </div>
-
-                    <div class="block rounded-xl" href="#">
-                        <span class="inline-block p-3">
-                            <a href="">
-                            <img src="" alt="">
-                        </a>
-                        </span>
-                    </div>
-
-                    <div class="block rounded-xl" href="#">
-                        <span class="inline-block p-3">
-                            <a href="">
-                            <img src="" alt="">
-                        </a>
-                        </span>
-                    </div>
-
-                    <div class="block rounded-xl" href="#">
-                        <span class="inline-block p-3">
-                            <a href="">
-                            <img src="" alt="">
+                                <img src="" alt="">
                             </a>
                         </span>
                     </div>
@@ -92,7 +66,7 @@
                     <div class="block rounded-xl" href="#">
                         <span class="inline-block p-3">
                             <a href="">
-                            <img src="" alt="">
+                                <img src="" alt="">
                             </a>
                         </span>
                     </div>
@@ -100,24 +74,56 @@
                     <div class="block rounded-xl" href="#">
                         <span class="inline-block p-3">
                             <a href="">
-                            <img src="" alt="">
-                        </a>
+                                <img src="" alt="">
+                            </a>
                         </span>
                     </div>
 
                     <div class="block rounded-xl" href="#">
                         <span class="inline-block p-3">
                             <a href="">
-                            <img src="" alt="">
-                        </a>
+                                <img src="" alt="">
+                            </a>
                         </span>
                     </div>
 
                     <div class="block rounded-xl" href="#">
                         <span class="inline-block p-3">
                             <a href="">
-                            <img src="" alt="">
-                        </a>
+                                <img src="" alt="">
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="block rounded-xl" href="#">
+                        <span class="inline-block p-3">
+                            <a href="">
+                                <img src="" alt="">
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="block rounded-xl" href="#">
+                        <span class="inline-block p-3">
+                            <a href="">
+                                <img src="" alt="">
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="block rounded-xl" href="#">
+                        <span class="inline-block p-3">
+                            <a href="">
+                                <img src="" alt="">
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="block rounded-xl" href="#">
+                        <span class="inline-block p-3">
+                            <a href="">
+                                <img src="" alt="">
+                            </a>
                         </span>
                     </div>
 
