@@ -20,3 +20,7 @@ body, html {
     width: 500px;
     align-items: center;
 }
+
+#resultImg {
+    margin-top: 10px;
+}
