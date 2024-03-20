@@ -102,3 +102,10 @@ closeModalBtn.addEventListener('click', () => {
     const container = document.getElementById('modalSearchTerm');
     container.innerHTML = ""; // Remove all child elements
 });
+
+var backToHomePageBtn = document.getElementById('loadHomePage');
+// Add event listener to the button
+backToHomePageBtn.addEventListener("click", function() {
+  // Load another HTML file
+  window.location.href = "index.html";
+});
