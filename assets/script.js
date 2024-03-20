@@ -2,6 +2,8 @@
 const apiKey = 'B8gfURjqdbbSuW06cilKknOrOiO1hCCIDbcq1jRS';
 const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
 // Function to fetch the photo of the day and display it in the HTML image tag
+
+// If fetched image is not in local storage run the following function below then if it is display the image in the #nasaImg
 async function fetchPhotoOfTheDayAndDisplay() {
     try {
         const response = await fetch(apiUrl);
@@ -11,10 +13,23 @@ async function fetchPhotoOfTheDayAndDisplay() {
             if (data.media_type === 'image') {
                 const imageUrl = data.url;
                 console.log("Image URL:", imageUrl);
-                // Set the src attribute of the image element to the fetched image URL
-                document.getElementById('nasaImg').src = imageUrl;
+                
                 document.getElementById('picTitle').textContent = data.title;
                 
+                // Check if the fetched image URL is in local storage
+                const storedImageUrl = localStorage.getItem('nasaImageUrl');
+                if (storedImageUrl === null || storedImageUrl !== imageUrl) {
+                    //if the image is not in the local storage run fetch photo function 
+                    fetchPhotoOfTheDayAndDisplay()
+                    
+                } else {
+                    // Image already in local storage, display it
+                    document.getElementById('nasaImg').src = imageUrl;
+                }
+
+                // Save the fetched image URL to localStorage
+                localStorage.setItem('nasaImageUrl', imageUrl);
+              
             } else {
                 console.log("Today's media is not an image.");   // return a not image
             }
@@ -25,6 +40,9 @@ async function fetchPhotoOfTheDayAndDisplay() {
         console.error("Error fetching data:", error);
     }
 }
+
+
+
 // Call the function to fetch the photo of the day and display it
 fetchPhotoOfTheDayAndDisplay();
 // Get the button element
