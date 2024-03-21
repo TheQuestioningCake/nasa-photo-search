@@ -20,4 +20,11 @@ body, html {
     width: 500px;
     align-items: center;
 }
+.modalLiEl{
+    cursor: pointer;
+}
+.modalLiEl:hover{
+    font-weight: 900;
+    text-decoration: underline;
+}
 

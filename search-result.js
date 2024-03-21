@@ -2,15 +2,19 @@ const openModalBtn = document.getElementById('openModal');
 const closeModalBtn = document.getElementById('closeModal');
 const modal = document.getElementById('modal');
 
+
 // Define searchTerm outside the event listener so it can be accessed later
+const searchInput = document.getElementById('Search');
 let searchTerm = "";
 
 // SEARCH PICTURES
+
+
 const searchBtn = document.getElementById('searchBtn');
 // Add event listener to the button
 searchBtn.addEventListener('click', function() {
     // Get the input element
-    const searchInput = document.getElementById('Search');
+    
     // Get the value from the input field
     searchTerm = searchInput.value.trim(); // Assign the value to searchTerm, and trim whitespace
     // Log the search term to the console
@@ -28,7 +32,7 @@ searchBtn.addEventListener('click', function() {
     }
 
     fetch(searchApiUrl)
-    .then(response => {
+    .then(response => { 
         // Check if the request was successful (status code 200)
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -58,6 +62,9 @@ searchBtn.addEventListener('click', function() {
         console.error('There was a problem fetching the images:', error);
     });
 });
+
+
+
 
 // Display search terms in the modal when it opens
 openModalBtn.addEventListener('click', () => {
@@ -90,9 +97,24 @@ openModalBtn.addEventListener('click', () => {
     // Convert Set back to array and create list items
     uniqueSearchTerms.forEach(searchTerm => {
         const liElement = document.createElement('li');
+        liElement.classList.add('modalLiEl')
         liElement.textContent = searchTerm;
         searchedTermList.appendChild(liElement);
+        //TODO:When the list is clicked i want it to send it to search input and search it
+        // Add click event listener to each list item
+        liElement.addEventListener('click', function(event) {
+            // Set the clicked search term into the search input field
+            const clickedTerm = event.target.textContent;
+            searchInput.value = clickedTerm; // Assuming searchInput is the reference to your search input field  
+            container.innerHTML = ""; // Remove all child elements
+            modal.classList.add('hidden');
+            
+
+        });
     });
+    // Get the list element
+
+
 });
 
 // Hide the modal and clear its content when the close button is clicked
