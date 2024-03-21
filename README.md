@@ -2,7 +2,7 @@
 
 ## Description
 
-My proposal for our project is to use the NASA API to display the picture of the day, and then have a search function that allows a user to search the photo website for NASA by keyword and returns the photos.  The search function upon typing would show previous search terms stored locally.
+Our project is to use the NASA API to display the picture of the day, and then have a search function that allows a user to search the photo website for NASA by keyword and returns the and display photos.  The "View Previous search" button opens a modal and shows previous search terms stored locally.
 
 ## User Story
 
@@ -23,7 +23,7 @@ Wayne - Pseudocode HTML
 
 Netra - Pseudocode CSS
 
-Andre - Code the HTML/CSS(use tailwind)
+Andre - Code the HTML/CSS(use tailwind) , Coded the JS 
 
 ## Branches
 
