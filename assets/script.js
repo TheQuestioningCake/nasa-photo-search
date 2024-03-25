@@ -31,6 +31,8 @@ async function fetchPhotoOfTheDayAndDisplay() {
                 localStorage.setItem('nasaImageUrl', imageUrl);
               
             } else {
+                console.log(data)
+                console.log("Video URL " + data.url)
                 console.log("Today's media is not an image.");   // return a not image
             }
         } else {
