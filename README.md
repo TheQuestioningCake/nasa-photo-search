@@ -9,35 +9,28 @@ Our project is to use the NASA API to display the picture of the day, and then h
 As a User I want to be able to load images from NASA's APIs so that I can get the picture of the day
 I also want to be able to search for photos using keywords in a search bar and have those saved locally
 
+## Acceptance Criteria
+When user loads page, then they are present with NASA's astronomy photo of the day (APOD)
+When the user clicks the search button, then they are brought to a search page
+When the user types in the search bar, then they are shown pictures based on their search
+When the user searches an item, then that item is stored in local storage to be accessed later
+
 ## APIs being used for this project
 
 https://images-api.nasa.gov/
 
 https://github.com/nasa/apod-api
 
-## Task List
+## CSS Framework
+Tailwind CSS
 
-Karen - Pseudocode JS
+## Deployed Page
+https://thequestioningcake.github.io/nasa-photo-search/
 
-Wayne - Pseudocode HTML
+## Repo
+https://github.com/TheQuestioningCake/nasa-photo-search
 
-Netra - Pseudocode CSS
+## Screenshot
 
-Andre - Code the HTML/CSS(use tailwind) , Coded the JS 
-
-## Branches
-
-Wayne's branch is git checkout wayne
-
-Karen's branch is git checkout karen
-
-Netra's branch is git checkout netra
-
-Ant/Andre's branch is git checkout ant
-
-### Reminder
-
-To go back to the main branch it's git checkout main
-please checkout to your branches to avoid messing up the main branch
-
+![image](https://github.com/TheQuestioningCake/nasa-photo-search/blob/main/projectScreenshot.png)
 
