@@ -13,15 +13,15 @@ async function fetchPhotoOfTheDayAndDisplay() {
             if (data.media_type === 'image') {
                 const imageUrl = data.url;
                 console.log("Image URL:", imageUrl);
-                
+
                 document.getElementById('picTitle').textContent = data.title;
-                
+
                 // Check if the fetched image URL is in local storage
                 const storedImageUrl = localStorage.getItem('nasaImageUrl');
                 if (storedImageUrl === null || storedImageUrl !== imageUrl) {
                     //if the image is not in the local storage run fetch photo function 
                     fetchPhotoOfTheDayAndDisplay()
-                    
+
                 } else {
                     // Image already in local storage, display it
                     document.getElementById('nasaImg').src = imageUrl;
@@ -29,7 +29,7 @@ async function fetchPhotoOfTheDayAndDisplay() {
 
                 // Save the fetched image URL to localStorage
                 localStorage.setItem('nasaImageUrl', imageUrl);
-              
+
             } else {
                 console.log(data)
                 console.log("Video URL " + data.url)
@@ -49,7 +49,7 @@ async function fetchPhotoOfTheDayAndDisplay() {
 fetchPhotoOfTheDayAndDisplay();
 // Add event listener to the button
 var homePageSearchBtn = document.getElementById('searchButton');
-homePageSearchBtn.addEventListener("click", function() {
+homePageSearchBtn.addEventListener("click", function () {
     // Load another HTML file
     window.location.href = "search-result.html";
 });
